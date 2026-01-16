@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background: #050505;
+  color: white;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  padding: 20px;
+  background: black;
+  border-bottom: 2px solid #00ffcc;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(circle, #0f2027, #000);
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: #00ffcc;
+  text-shadow: 0 0 20px #00ffcc;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 15px 40px;
+  font-size: 16px;
+  border: none;
+  background: #00ffcc;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  box-shadow: 0 0 25px #00ffcc;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  padding: 30px;
+  background: #111;
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: black;
+  font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
